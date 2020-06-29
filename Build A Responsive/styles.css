@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    width: 84.3%;
+    height: 70px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.container .top {
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.container .top span {
+    color: #56a79a;
+}
+
+.container .navbar-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container .navbar-menu * {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(138, 138, 138);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.container .navbar-menu li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.container .navbar-menu li:hover a {
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+}
+
+.container .navbar-menu li:nth-child(1) a{
+    color: #56a79a;
+    border-bottom: 3px solid #56a79a;
+}
+
+/* Showcase */
+
+.showcase {
+    background: url(./img/showcase.jpg) center center/cover;
+    max-width: 1600px;
+    max-height: 700px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-bottom: 2px solid #56a79a;
+    border-top: 1px solid #56a79a;
+}
+
+.showcase div {
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 1.3rem 5rem 2rem 5rem;
+    text-align: center;
+    border-radius: 6rem;
+    line-height: 3rem;
+}
+
+.showcase div h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.showcase div h1 span {
+    color: #56a79a;
+}
+
+.showcase div p {
+    color: rgb(202, 202, 202);
+    font-size: 1rem;
+}
+
+/* Icon container */
+
+.icons-container {
+    max-width: 1600px;
+    width: 80%;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.icons-container .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+}
+
+.icons-container .top h1 {
+    font-size: 2.4rem;
+}
+
+.icons-container .top p {
+    color: rgb(138, 138, 138);
+}
+
+.icons-container .content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icons-container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.icons-container .content i {
+    font-size: 3.5rem;
+    color: #56a79a;
+    padding-bottom: 1.5rem;
+}
+
+.icons-container .content h3 {
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.icons-container .content p {
+    color: rgb(138, 138, 138);
+}
+
+/* footer-showcase */
+
+.footer-showcase {
+    max-width: 1600px;
+    max-height: 550px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: url(./img/info-bg.jpg) center center/cover;
+    position: relative;
+}
+
+.footer-showcase::before {
+    content: '';
+    background-color: rgba(82, 82, 82, 0.6);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer-showcase .content {
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-showcase .content h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-showcase .content li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+.footer-showcase img {
+    max-width: 35rem;
+    width: 100%;
+}
+
+/* footer menu */
+
+.footer-menu {
+    width: 100%;
+    background-color: rgb(49, 49, 49);
+}
+
+.footer-menu .content {
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding: 2rem 0;
+    color: #fff;
+    line-height: 2.3rem;
+    grid-gap: 2rem;
+    align-items: center;
+}
+
+.footer-menu .content li {
+    list-style: none;
+}
+
+.footer-menu .content span {
+    font-weight: 600;
+}
+
+.email-form input[type="text"]{
+    color: #000;
+    font-size: 0.8rem;
+    padding: 0.4rem;
+}
+
+.email-form input[type="submit"] {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    color: #fff;
+    background-color: rgb(49, 49, 49);
+    outline: none;
+}
+
+/* vst */
+
+.vst {
+    background-color: #56a79a;
+    color: #fff;
+    text-align: center;
+}
+
+.vst p {
+    padding: 1.5rem 0;
+}
